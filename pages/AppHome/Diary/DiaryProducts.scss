@@ -1,0 +1,35 @@
+.scannedProduct {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  text-align: left;
+  background-color: rgb(248, 248, 248);
+  align-items: center;
+  margin: 0;
+  border-top: 1px solid rgb(37, 180, 37);
+  border-bottom: 1px solid rgb(29, 195, 29);
+
+  &__img {
+    height: 80px;
+    border: 3px solid rgb(41, 199, 41);
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+  }
+  &__sideTextDiv {
+    display: block;
+    padding-left: 2rem;
+  }
+  &__sideOptions {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+    &__edit {
+      margin-top: 1rem;
+    }
+  }
+  .scannedProduct__text {
+    font-size: 0.7rem;
+  }
+}

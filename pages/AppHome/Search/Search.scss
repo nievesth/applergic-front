@@ -1,0 +1,31 @@
+.overMap {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.returnMap {
+  color: rgb(45, 86, 200);
+  z-index: 100;
+  bottom: 2rem;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  font-family: "Montserrat";
+  color: white;
+  background-color: rgb(38, 199, 220);
+  border-radius: 10px;
+  font-size: 16px;
+  height: 40px;
+  border: none;
+}

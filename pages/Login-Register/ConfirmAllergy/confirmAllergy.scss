@@ -1,0 +1,108 @@
+@import "../../../styles/settings/color-variables";
+@import "../../../styles/settings/responsive";
+@import "../../../styles/settings/scrollbar";
+
+.confirmAllergy {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    @include landscape {
+      flex-direction: row;
+    }
+    @include nonMobile {
+      flex-direction: column;
+    }
+
+    h2 {
+      margin: 0;
+      padding-bottom: 25px;
+      font-size: 21px;
+      @include landscape {
+        padding-bottom: 0;
+      }
+      @include nonMobile {
+        padding-bottom: 25px;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 15px;
+      color: slategray;
+    }
+  }
+
+  &__userselection {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: 20px;
+    overflow-y: auto;
+    @include customScrollbar;
+    button {
+      cursor: default;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 8px;
+    @include landscape {
+      flex-direction: row;
+      button {
+        max-width: 45%;
+      }
+    }
+    @include nonMobile {
+      flex-direction: column;
+      button {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 12px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__btn--goBack {
+    border: solid 1px rgb(168, 168, 168);
+    border-radius: 150px;
+    color: rgb(168, 168, 168);
+    background-color: white;
+  }
+
+  &__btn--confirm {
+    border: none;
+    border-radius: 10px;
+    background-color: $aquamarine;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}

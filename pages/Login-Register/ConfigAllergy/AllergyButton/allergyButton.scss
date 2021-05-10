@@ -1,0 +1,31 @@
+.AllergyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 16px;
+  border: solid 1px rgb(168, 168, 168);
+  border-radius: 150px;
+  color: rgb(168, 168, 168);
+  background-color: white;
+}
+
+.AllergyButton--round {
+  $x: 28px;
+  height: $x;
+  width: $x;
+}
+
+.AllergyButton--small {
+  margin: 6px 6px 0 0;
+  padding: 4px 6px;
+  font-size: 10px;
+}
+
+.AllergyButton--selected {
+  color: white;
+  border-color: rgb(248, 73, 113);
+  background-color: rgb(248, 73, 113);
+}

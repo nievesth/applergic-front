@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@import "../src/styles/imports/generic.imports";
+@import "../src/styles/imports/settings.imports";
+@import "../src/styles/imports/elements.imports";

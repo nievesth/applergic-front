@@ -1,0 +1,26 @@
+button.genericButton {
+  width: 80%;
+  background-color: rgb(0, 174, 255);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2.3rem;
+  &__sos {
+    background-color: #f84971;
+  }
+  &--high {
+    bottom: 6rem;
+  }
+}
+.button_X {
+  background-color: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 0;
+}

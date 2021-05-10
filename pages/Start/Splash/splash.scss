@@ -1,0 +1,54 @@
+@import "../../../styles/settings/responsive";
+
+.splash__wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.splash__link {
+  height: 100%;
+  width: 100%;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  @include landscape {
+    flex-direction: row;
+  }
+  @include nonMobile {
+    flex-direction: column;
+  }
+  &__title {
+    width: 180px;
+    height: 100px;
+    padding: 20px;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+    // transform-origin: bottom right;
+    @include landscape {
+      width: 100vh;
+      height: 100vh;
+      transform: rotate(-90deg);
+    }
+    @include nonMobile_Landscape {
+      width: $breakW - 10px;
+      height: $breakW - 10px;
+      border-radius: 0 25px 25px 0;
+    }
+    @include nonMobile {
+      width: 100%;
+      height: auto;
+      transform: none;
+      border-radius: 0 0 25px 25px;
+    }
+  }
+}

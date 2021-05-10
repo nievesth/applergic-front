@@ -1,0 +1,47 @@
+@import "../../../styles/settings/color-variables";
+
+.generalButton {
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+  font-family: "Montserrat";
+  color: white;
+  background-color: $aquamarine;
+  border-radius: 10px;
+  border: none;
+  &__buscar {
+    background-color: grey;
+    font-family: "Montserrat";
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  &__sos {
+    background-color: #f84971;
+  }
+}
+
+.generalButton2 {
+  font-size: 16px;
+  height: 40px;
+  width: 290px;
+  font-family: "Montserrat";
+  color: white;
+  background-color: $aquamarine;
+  border-radius: 10px;
+  border: none;
+  &__buscar {
+    background-color: grey;
+    font-family: "Montserrat";
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  &__sos {
+    background-color: #f84971;
+  }
+}

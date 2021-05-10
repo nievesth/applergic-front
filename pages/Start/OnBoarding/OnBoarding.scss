@@ -1,0 +1,75 @@
+@import "../../../styles/settings/responsive";
+
+.OnBoarding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  &__logo {
+    width: 120px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    @include landscape {
+      margin-top: 5px;
+      margin-bottom: 8px;
+    }
+    @include nonMobile {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  }
+  &__SwiperWrapper {
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 22px;
+  }
+  &__Swiper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: $breakH;
+    .swiper-pagination-bullets {
+      position: relative;
+      margin-top: 10px;
+    }
+  }
+  &__SwiperSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    cursor: grab;
+    @include landscape {
+      flex-direction: row;
+    }
+    @include nonMobile {
+      flex-direction: column;
+    }
+  }
+  &__SwiperSlideImage {
+    $x: 232px;
+    width: $x;
+    height: $x;
+  }
+  &__SwiperSlideText {
+    max-width: 300px;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
+.OnBoarding__buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: $breakH;
+  padding: 30px;
+}
+
+.OnBoarding__button {
+  color: #999999;
+  background-color: white;
+  border-style: none;
+}

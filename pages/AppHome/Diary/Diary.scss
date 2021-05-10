@@ -1,0 +1,30 @@
+.diary {
+  text-align: center;
+  &__title {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &__allergies {
+    color: red;
+    font-size: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &__date {
+    font-size: 0.8rem;
+  }
+}
+
+.botonGuardarDiario {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+.botonGenerarInforme {
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+}

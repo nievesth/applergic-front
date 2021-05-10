@@ -1,0 +1,48 @@
+@import "../../../../styles/settings/color-variables";
+// @import "../../../../styles/settings/responsive";
+
+.ScanButtons {
+  $x: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: slategray;
+    &--active {
+      font-weight: bold;
+      .ScanButtons__image {
+        background-color: $aquamarine;
+      }
+    }
+  }
+
+  &__image {
+    height: $x;
+    width: $x;
+    border: none;
+    border-radius: 100%;
+    background-color: silver;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    &--barcode {
+      background-image: url("../../../../assets/img/Scan/barcode2.png");
+    }
+    &--qr {
+      background-image: url("../../../../assets/img/Scan/qr.png");
+    }
+  }
+
+  &__text {
+    max-width: $x;
+    margin: 0;
+    margin-top: 16px;
+  }
+}
